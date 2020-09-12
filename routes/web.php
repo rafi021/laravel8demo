@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// functional routes 
+Route::get('/users', function(){
+    return 'Hi there! This is user web page';
+});
