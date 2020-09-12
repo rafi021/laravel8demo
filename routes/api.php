@@ -33,3 +33,7 @@ Route::get('/users/{name}', function($name = null){
 Route::get('/products/{id?}', function ($id = null) {
     return 'Product ID: '.$id;
 })->where('id', '[0-9]+');
+
+Route::match(['get', 'post'], '/students', function (Request $request) {
+    return 'Requested method is '. $request->method();
+});
