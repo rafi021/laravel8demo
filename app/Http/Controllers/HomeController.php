@@ -11,7 +11,7 @@ class HomeController extends Controller
         return 'Hi from HomeController';
     }
 
-    public function user($name)
+    public function username($name)
     {
         return 'Hi from HomeController, UserNAME:' . $name;
     }
