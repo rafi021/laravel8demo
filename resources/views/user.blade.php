@@ -7,7 +7,7 @@
     <title>User</title>
 </head>
 <body>
-    <x-header/>
+    <x-header name="New Header Component"/>
     <h1>User View</h1>
     <p>UserName is: {{ $name }}</p>
     <ul>
