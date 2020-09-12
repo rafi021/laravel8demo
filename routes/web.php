@@ -18,4 +18,5 @@ Route::get('/users', function(){
 
 // Laravel 8 way 
 Route::get('/home', [HomeController::class, 'index'])->name('home.index');
-Route::get('/home/user/{name}', [HomeController::class, 'user'])->name('userView');
+Route::get('/home/user/{name}', [HomeController::class, 'user'])->name('user-name');
+Route::get('/user', [HomeController::class,'userview'])->name('user.index');
