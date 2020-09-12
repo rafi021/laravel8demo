@@ -16,8 +16,4 @@ class HomeController extends Controller
         return 'Hi from HomeController, UserNAME:' . $name;
     }
 
-    public function userview(){
-        return view('user');
-    } 
-
 }

@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>User View</h1>
+    <p>UserName is: {{ $name }}</p>
 </body>
 </html>
