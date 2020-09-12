@@ -10,4 +10,9 @@ class HomeController extends Controller
     {
         return 'Hi from HomeController';
     }
+
+    public function user($name)
+    {
+        return 'Hi from HomeController, UserNAME:' . $name;
+    }
 }
