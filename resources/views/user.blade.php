@@ -9,5 +9,11 @@
 <body>
     <h1>User View</h1>
     <p>UserName is: {{ $name }}</p>
+    <ul>
+        <li>{{ $user['id'] }}</li>
+        <li>{{ $user['name'] }}</li>
+        <li>{{ $user['email'] }}</li>
+        <li>{{ $user['phone'] }}</li>
+    </ul>
 </body>
 </html>
