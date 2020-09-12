@@ -7,6 +7,7 @@
     <title>User</title>
 </head>
 <body>
+    <x-header/>
     <h1>User View</h1>
     <p>UserName is: {{ $name }}</p>
     <ul>
