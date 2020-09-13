@@ -23,7 +23,9 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->sentence(),
+            'body' => $this->faker->paragraph(4),
+            'created_at' => $this->faker->date('2008-01-01', 'now'),
         ];
     }
 }
