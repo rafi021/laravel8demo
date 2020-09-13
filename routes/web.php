@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
@@ -24,3 +25,5 @@ Route::get('/home/user/{name}', [HomeController::class, 'username'])->name('user
 Route::get('/user', [UserController::class,'index'])->name('user.index');
 
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
+
+Route::get('/posts', [ClientController::class, 'getAllPost'])->name('post.index');
