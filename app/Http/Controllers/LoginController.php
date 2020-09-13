@@ -13,6 +13,13 @@ class LoginController extends Controller
 
     public function loginStore(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
+        $validatedData = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:6|max:12'
+        ]);
+        
+        return response()->json('successfully login');
+
     }
 }
