@@ -9,7 +9,12 @@ class ClientController extends Controller
 {
     public function getAllPost()
     {
-        $response = Http::get('https://jsonplaceholder.typicode.com/posts');
-        return $response->json();
+        $posts = Http::get('https://jsonplaceholder.typicode.com/posts');
+        return $posts->json();
+    }
+
+    public function getSinglePost($id){
+        $post = Http::get('https://jsonplaceholder.typicode.com/posts/'. $id);
+        return $post->json();
     }
 }

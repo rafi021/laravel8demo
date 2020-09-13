@@ -27,3 +27,4 @@ Route::get('/user', [UserController::class,'index'])->name('user.index');
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
 
 Route::get('/posts', [ClientController::class, 'getAllPost'])->name('post.index');
+Route::get('/post/{id}', [ClientController::class, 'getSinglePost'])->name('post.show');
