@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -31,3 +32,7 @@ Route::get('/posts/{id}', [ClientController::class, 'getSinglePost'])->name('pos
 Route::get('/add-post', [ClientController::class, 'addPost'])->name('post.create');
 Route::get('/update-post/{id}', [ClientController::class, 'updatePost'])->name('post.update');
 Route::get('/delete-post/{id}', [ClientController::class, 'deletePost'])->name('post.delete');
+
+// Login Routes 
+Route::get('/login', [LoginController::class, 'login'])->name('login.index');
+Route::post('/login', [LoginController::class, 'loginStore'])->name('login.store');
