@@ -27,4 +27,7 @@ Route::get('/user', [UserController::class,'index'])->name('user.index');
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
 
 Route::get('/posts', [ClientController::class, 'getAllPost'])->name('post.index');
-Route::get('/post/{id}', [ClientController::class, 'getSinglePost'])->name('post.show');
+Route::get('/posts/{id}', [ClientController::class, 'getSinglePost'])->name('post.show');
+Route::get('/add-post', [ClientController::class, 'addPost'])->name('post.create');
+Route::get('/update-post/{id}', [ClientController::class, 'updatePost'])->name('post.update');
+Route::get('/delete-post/{id}', [ClientController::class, 'deletePost'])->name('post.delete');
